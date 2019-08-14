@@ -134,6 +134,7 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 header {
   width: 100%;
@@ -195,6 +196,7 @@ header nav a {
 }
 .top-content .about h2 {
   color: black;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
@@ -205,6 +207,7 @@ header nav a {
   color: black;
   line-height: 1.5;
   margin-left: 5%;
+  font-weight: 20%;
 }
 .bottom-content {
   width: 100%;
@@ -228,7 +231,7 @@ header nav a {
 .bottom-content .skills-section h2 {
   color: white;
   font-size: 1.6rem;
-  margin-bottom: 4%;
+  margin: 4% 0;
 }
 .bottom-content .skills-section .icons-section {
   width: 50%;
@@ -267,6 +270,7 @@ header nav a {
   align-content: center;
   margin: auto;
   color: white;
+  font-weight: 200;
 }
 footer {
   width: 100%;
