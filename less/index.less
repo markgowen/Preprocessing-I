@@ -136,6 +136,23 @@ table {
 /* Variables */
 @main-color: #382727;
 
+/* Mix-ins */
+.container-settings() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-styles() {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5%;
+}
+
 html,
 body {
   height: 100%;
@@ -164,9 +181,7 @@ header {
 } //closes header
 
 .hero {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  .container-settings();
 
   .logo {
     width: 30%;
@@ -192,10 +207,8 @@ header {
 } //closes hero
 
 .top-content {
-  width: 100%;
+  .container-settings();
   height: 30%;
-  display: flex;
-  justify-content: center;
   background-color: lightgray;
 
   .about {
@@ -226,9 +239,7 @@ header {
 } //closes about-content
 
 .bottom-content {
-  width: 100%;
-  height: auto;
-  display: flex;
+  .container-settings();
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -236,13 +247,7 @@ header {
   overflow: none;
 
   .skills-section {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 5%;
+    .section-styles();
 
     h2 {
       color: white;
@@ -266,13 +271,7 @@ header {
   } //closes skills
 
   .history {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 5%;
+    .section-styles();
 
     h2 {
       color: white;
