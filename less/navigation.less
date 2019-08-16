@@ -1,19 +1,18 @@
 nav {
   width: 100%;
-  .flex(space-aroundl, center);
+  .flex(center, center);
   padding: 5% 0;
   margin: auto;
 
   .navBar {
     max-width: 800px;
     width: 100%;
-    .flex(space-between, center);
-    margin: auto;
+    .flex(center, center);
 
     a {
-      margin: auto;
       text-decoration: none;
       color: @main-color;
+      padding: 0 5%;
 
       &:hover {
           color: lighten(@main-color, 30%)

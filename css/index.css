@@ -163,15 +163,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-aroundl;
+  justify-content: center;
   align-items: center;
   padding: 5% 0;
   margin: auto;
@@ -180,15 +175,52 @@ nav .navBar {
   max-width: 800px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: auto;
 }
 nav .navBar a {
-  margin: auto;
   text-decoration: none;
   color: #382727;
+  padding: 0 5%;
 }
 nav .navBar a:hover {
   color: #926666;
+}
+.hero {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.hero .logo {
+  width: 35%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .hero .logo {
+    width: 75%;
+  }
+}
+.hero .name {
+  width: 40%;
+  padding: 2%;
+}
+.hero .name h2 {
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .hero .name {
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+  }
 }

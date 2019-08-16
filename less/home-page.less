@@ -1,5 +1,37 @@
 .hero {
-    
+    width: 80%;
+    .flex(center, center);
+    margin: auto;
+
+    @media @mobile {
+        .flex(center, center);
+        flex-direction: column;
+    }//closes hero media query
+
+    .logo {
+        width: 35%;
+        padding: 2%;
+
+        @media @mobile {
+            width: 75%;
+        }//closes logo media query
+    }//closes logo
+
+    .name {
+        width: 40%;
+        padding: 2%;
+
+        h2 {
+            font-size: 1.2rem;
+        }//closes h2
+
+        @media @mobile {
+            flex-wrap: wrap;
+            text-align: center;
+            width: 100%;
+        }//closes logo media query
+    }//closes name
+
 }//closes hero
 
 .top-content {
