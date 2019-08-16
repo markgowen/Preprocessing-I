@@ -321,6 +321,7 @@ nav .navBar a:hover {
 @media (max-width: 500px) {
   .bottom-content .history .history-content {
     flex-direction: column;
+    text-align: center;
   }
 }
 .bottom-content .history .history-content h3 {
