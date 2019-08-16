@@ -1,43 +1,135 @@
 .hero {
-    width: 80%;
+  width: 80%;
+  .flex(center, center);
+  margin: auto;
+
+  @media @mobile {
     .flex(center, center);
-    margin: auto;
+    flex-direction: column;
+  } //closes hero media query
+
+  .logo {
+    width: 35%;
+    padding: 3%;
 
     @media @mobile {
-        .flex(center, center);
-        flex-direction: column;
-    }//closes hero media query
+      width: 75%;
+    } //closes logo media query
+  } //closes logo
 
-    .logo {
-        width: 35%;
-        padding: 2%;
+  .name {
+    width: 40%;
+    padding: 3%;
 
-        @media @mobile {
-            width: 75%;
-        }//closes logo media query
-    }//closes logo
+    h2 {
+      font-size: 1.2rem;
+    } //closes h2
 
-    .name {
-        width: 40%;
-        padding: 2%;
-
-        h2 {
-            font-size: 1.2rem;
-        }//closes h2
-
-        @media @mobile {
-            flex-wrap: wrap;
-            text-align: center;
-            width: 100%;
-        }//closes logo media query
-    }//closes name
-
-}//closes hero
+    @media @mobile {
+      flex-wrap: wrap;
+      text-align: center;
+      width: 100%;
+    } //closes logo media query
+  } //closes name
+} //closes hero
 
 .top-content {
+  .section-parameters();
+  height: 30%;
+  background-color: @bg-color-light;
 
-}//closes top-content
+  .about {
+    width: 70%;
+    padding: 3%;
+
+    @media @mobile {
+      text-align: center;
+    } //closes about media query
+
+    p {
+      text-align: left;
+
+      @media @mobile {
+        text-align: justify;
+      }
+    } //closes p
+  } //closes about
+} //closes top-content
 
 .bottom-content {
+  .section-parameters();
+  height: 70%;
+  flex-direction: column;
+  background-color: @bg-color-dark;
 
-}//closes bottom-content
+  .skills-section {
+    width: 70%;
+    padding: 3%;
+
+    h2 {
+      color: white;
+
+      @media @mobile {
+        text-align: center;
+      }
+    } //closes h2
+
+    .icons-section {
+      width: 50%;
+      .flex(center, center);
+      align-content: center;
+      margin: auto;
+
+      @media @mobile {
+        width: 100%;
+      }
+
+      .icons {
+        width: 45%;
+        padding: 3%;
+      } //closes icons
+
+      @media @mobile {
+        flex-direction: column;
+      } //closes icons-section media query
+    } //closes icons-section
+  } //closes skills-section
+
+  .history {
+    width: 70%;
+    padding: 3%;
+
+    h2 {
+      color: white;
+
+      @media @mobile {
+        text-align: center;
+      } //closes h2 media query
+    } //closes h2
+
+    .history-content {
+      color: white;
+      .flex(space-evenly, center);
+      margin: auto;
+      padding: 3%;
+
+      @media @mobile {
+        flex-direction: column;
+      }
+
+      h3 {
+        font-size: 2rem;
+      } //closes h3
+      p {
+        font-size: 1.2rem;
+        font-weight: 100;
+      } //closes p
+
+      .adventurewed,
+      .onesource,
+      .iwas {
+        padding: 3%;
+      } //closes paragraphs
+    } //closes history-content
+  } //closes history-section
+} //closes bottom-content

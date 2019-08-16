@@ -168,8 +168,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 0;
-  margin: auto;
+  padding: 4% 0 3% 0;
+}
+@media (max-width: 500px) {
+  nav {
+    padding: 5% 0 2% 0;
+  }
 }
 nav .navBar {
   max-width: 800px;
@@ -203,7 +207,7 @@ nav .navBar a:hover {
 }
 .hero .logo {
   width: 35%;
-  padding: 2%;
+  padding: 3%;
 }
 @media (max-width: 500px) {
   .hero .logo {
@@ -212,7 +216,7 @@ nav .navBar a:hover {
 }
 .hero .name {
   width: 40%;
-  padding: 2%;
+  padding: 3%;
 }
 .hero .name h2 {
   font-size: 1.2rem;
@@ -222,5 +226,126 @@ nav .navBar a:hover {
     flex-wrap: wrap;
     text-align: center;
     width: 100%;
+  }
+}
+.top-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 30%;
+  background-color: lightgrey;
+}
+.top-content .about {
+  width: 70%;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  .top-content .about {
+    text-align: center;
+  }
+}
+.top-content .about p {
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .top-content .about p {
+    text-align: justify;
+  }
+}
+.bottom-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 70%;
+  flex-direction: column;
+  background-color: #382727;
+}
+.bottom-content .skills-section {
+  width: 70%;
+  padding: 3%;
+}
+.bottom-content .skills-section h2 {
+  color: white;
+}
+@media (max-width: 500px) {
+  .bottom-content .skills-section h2 {
+    text-align: center;
+  }
+}
+.bottom-content .skills-section .icons-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .bottom-content .skills-section .icons-section {
+    width: 100%;
+  }
+}
+.bottom-content .skills-section .icons-section .icons {
+  width: 45%;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  .bottom-content .skills-section .icons-section {
+    flex-direction: column;
+  }
+}
+.bottom-content .history {
+  width: 70%;
+  padding: 3%;
+}
+.bottom-content .history h2 {
+  color: white;
+}
+@media (max-width: 500px) {
+  .bottom-content .history h2 {
+    text-align: center;
+  }
+}
+.bottom-content .history .history-content {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  .bottom-content .history .history-content {
+    flex-direction: column;
+  }
+}
+.bottom-content .history .history-content h3 {
+  font-size: 2rem;
+}
+.bottom-content .history .history-content p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.bottom-content .history .history-content .adventurewed,
+.bottom-content .history .history-content .onesource,
+.bottom-content .history .history-content .iwas {
+  padding: 3%;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #382727;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  footer {
+    text-align: center;
+    padding: 5%;
   }
 }

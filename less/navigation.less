@@ -1,8 +1,11 @@
 nav {
   width: 100%;
   .flex(center, center);
-  padding: 5% 0;
-  margin: auto;
+  padding: 4% 0 3% 0;
+
+  @media @mobile {
+    padding: 5% 0 2% 0;
+  }
 
   .navBar {
     max-width: 800px;
@@ -15,7 +18,7 @@ nav {
       padding: 0 5%;
 
       &:hover {
-          color: lighten(@main-color, 30%)
+        color: lighten(@main-color, 30%);
       }
     } //closes tags
   } //closes navBar
